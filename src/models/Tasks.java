@@ -28,6 +28,9 @@ public class Tasks {
     @Column(name = "content", length = 255, nullable = false)
     private String content;
 
+    @Column(name = "status", length = 255, nullable = false)
+    private String status;
+
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
@@ -48,6 +51,14 @@ public class Tasks {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public Timestamp getCreated_at() {
